@@ -1,0 +1,111 @@
+.my-reports-page {
+  padding: var(--spacing-6) 0;
+}
+
+.reports-header h1 {
+  color: var(--color-primary);
+  font-family: var(--font-heading);
+  margin-bottom: var(--spacing-2);
+}
+
+.reports-header .subtitle {
+  color: var(--color-slate-500);
+  margin-bottom: var(--spacing-6);
+}
+
+.reports-tabs {
+  display: flex;
+  gap: var(--spacing-4);
+  border-bottom: 2px solid var(--color-slate-200);
+  margin-bottom: var(--spacing-6);
+}
+
+.reports-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-4);
+}
+
+.report-card {
+  display: flex;
+  background: white;
+  border: 1px solid var(--color-slate-200);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-fast);
+}
+
+.report-card:hover {
+  box-shadow: var(--shadow-md);
+  border-color: var(--color-slate-300);
+}
+
+.report-image {
+  width: 120px;
+  flex-shrink: 0;
+  background: var(--color-slate-100);
+}
+
+.report-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.placeholder-img {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  color: var(--color-slate-400);
+}
+
+.report-content {
+  display: flex;
+  flex: 1;
+  padding: var(--spacing-4);
+  flex-direction: column;
+  gap: var(--spacing-4);
+}
+
+@media (min-width: 640px) {
+  .report-content {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.report-main h3 {
+  margin: 0 0 var(--spacing-1) 0;
+  font-family: var(--font-heading);
+  color: var(--color-slate-800);
+  font-size: 1.1rem;
+}
+
+.report-meta {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2);
+  color: var(--color-slate-500);
+  font-size: 0.85rem;
+}
+
+.report-status {
+  display: flex;
+  align-items: center;
+}
+
+.report-actions {
+  display: flex;
+  gap: var(--spacing-2);
+}
+
+.action-btn {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2);
+}

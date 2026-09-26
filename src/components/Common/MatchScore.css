@@ -1,0 +1,85 @@
+.match-score-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-1);
+}
+
+.match-score {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.match-score-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.match-score-bg {
+  stroke: var(--color-border);
+}
+
+.match-score-progress {
+  stroke-linecap: round;
+  transition: stroke-dashoffset var(--transition-slow) ease-out;
+}
+
+.match-score-text {
+  display: flex;
+  align-items: baseline;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  z-index: 1;
+}
+
+.match-score-percent {
+  font-size: 0.6em;
+  margin-left: 1px;
+}
+
+.match-score-label {
+  font-size: var(--text-xs);
+  font-weight: 600;
+  color: var(--color-text-light);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Colors based on score */
+.match-high .match-score-progress {
+  stroke: var(--color-success);
+}
+.match-high .match-score-text {
+  color: var(--color-success);
+}
+
+.match-medium .match-score-progress {
+  stroke: var(--color-warning);
+}
+.match-medium .match-score-text {
+  color: var(--color-warning);
+}
+
+.match-low .match-score-progress {
+  stroke: var(--color-error);
+}
+.match-low .match-score-text {
+  color: var(--color-error);
+}
+
+/* Sizes */
+.match-score-sm .match-score-text {
+  font-size: var(--text-xs);
+}
+
+.match-score-md .match-score-text {
+  font-size: var(--text-base);
+}
+
+.match-score-lg .match-score-text {
+  font-size: var(--text-xl);
+}
